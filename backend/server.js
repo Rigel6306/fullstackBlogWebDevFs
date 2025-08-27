@@ -3,7 +3,8 @@ const cors =require('cors')
 const blogRouter=require('./Router/blogsRouter')
 
 const app=express()
-
+app.use(cors())
+app.use('/blogs',blogRouter)
 
 
 
