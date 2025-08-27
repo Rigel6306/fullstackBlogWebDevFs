@@ -1,4 +1,4 @@
-
+import Blog from "./components/blogs"
 
 function App() {
   
@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <p>frontend</p>
+    <Blog/>
     </>
 
       

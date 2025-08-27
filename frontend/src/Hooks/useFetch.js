@@ -5,6 +5,7 @@ const useFetch = () => {
     const [error,setError]=useState(false)
     
     const getData=async (URL)=>{
+        setIsLoading(true)
        const responce= await  fetch(URL).then((res)=>{
             return res.json()
 
@@ -13,7 +14,7 @@ const useFetch = () => {
         }).catch((err)=>{
             setError(err)
         })
-
+         setIsLoading(false)
         return responce
     }
 
